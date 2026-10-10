@@ -1,0 +1,23 @@
+project_id = "pitlane-local"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+
+[functions.create-booking]
+verify_jwt = false
+
+[functions.manage-booking]
+verify_jwt = false
+
+[functions.owner-ai]
+verify_jwt = true
+
+[functions.send-notifications]
+verify_jwt = false
+
+[functions.booking-ics]
+verify_jwt = false

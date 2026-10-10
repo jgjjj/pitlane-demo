@@ -1,0 +1,24 @@
+{
+  "slug": "oxide",
+  "name": "OXIDE Garage",
+  "city": "Санкт-Петербург · Петроградка",
+  "timezone": "Europe/Moscow",
+  "locale": "ru-RU",
+  "mode": "preview",
+  "accent": "#ff8a5b",
+  "logo": "OXIDE",
+  "icon": "/tenants/oxide/icon.svg",
+  "maskableIcon": "/tenants/oxide/maskable.svg",
+  "appleTouchIcon": "/tenants/oxide/apple-touch-icon.svg",
+  "startupAssets": ["/tenants/oxide/startup.svg"],
+  "hero": "/tenants/oxide/hero.jpg",
+  "description": "Характерный уход за автомобилем в ритме города.",
+  "phone": "+7 812 000-77-11",
+  "address": "Большой проспект П.С., 41",
+  "services": [
+    { "id": "wash", "name": "Комплексная мойка", "description": "Бережная мойка кузова и сухая уборка салона.", "durationMinutes": 120, "bufferMinutes": 30, "priceCents": 1600000, "image": "/tenants/oxide/wash.jpg", "category": "Уход" },
+    { "id": "wrap", "name": "Защитная плёнка", "description": "Прозрачная защита зон риска от сколов и царапин.", "durationMinutes": 720, "bufferMinutes": 120, "priceCents": 8500000, "image": "/tenants/oxide/protection.jpg", "category": "Защита" }
+  ],
+  "resources": [{ "id": "bay-a", "name": "Бокс A", "kind": "wash_bay", "capacity": 1 }],
+  "workingHours": { "mon": { "open": "10:00", "close": "22:00" }, "tue": { "open": "10:00", "close": "22:00" }, "wed": { "open": "10:00", "close": "22:00" }, "thu": { "open": "10:00", "close": "22:00" }, "fri": { "open": "10:00", "close": "22:00" }, "sat": { "open": "10:00", "close": "22:00" }, "sun": { "open": "11:00", "close": "20:00" } }
+}

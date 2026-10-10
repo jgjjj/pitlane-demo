@@ -1,0 +1,29 @@
+{
+  "slug": "graphite",
+  "name": "GRAPHITE Detailing",
+  "city": "Москва · Хамовники",
+  "timezone": "Europe/Moscow",
+  "locale": "ru-RU",
+  "mode": "preview",
+  "accent": "#d9ff57",
+  "logo": "GRAPHITE",
+  "icon": "/tenants/graphite/icon.svg",
+  "maskableIcon": "/tenants/graphite/maskable.svg",
+  "appleTouchIcon": "/tenants/graphite/apple-touch-icon.svg",
+  "startupAssets": ["/tenants/graphite/startup.svg"],
+  "hero": "/tenants/graphite/hero.jpg",
+  "description": "Точная работа с кузовом, салоном и характером вашего автомобиля.",
+  "phone": "+7 495 000-12-42",
+  "address": "ул. Усачёва, 62",
+  "services": [
+    { "id": "ceramic", "name": "Керамика кузова", "description": "Глубокий блеск и защита лакокрасочного покрытия.", "durationMinutes": 480, "bufferMinutes": 60, "priceCents": 4500000, "image": "/tenants/graphite/ceramic-coating.jpg", "category": "Защита" },
+    { "id": "interior", "name": "Детейлинг салона", "description": "Глубокая чистка материалов и восстановление фактуры.", "durationMinutes": 300, "bufferMinutes": 45, "priceCents": 2800000, "image": "/tenants/graphite/interior-detail.jpg", "category": "Салон" },
+    { "id": "polish", "name": "Полировка кузова", "description": "Убираем мелкие дефекты, возвращаем глубину цвета.", "durationMinutes": 360, "bufferMinutes": 60, "priceCents": 3200000, "image": "/tenants/graphite/polishing.jpg", "category": "Кузов" }
+  ],
+  "resources": [
+    { "id": "post-1", "name": "Пост 1", "kind": "detailing_bay", "capacity": 1 },
+    { "id": "post-2", "name": "Пост 2", "kind": "detailing_bay", "capacity": 1 }
+  ],
+  "workingHours": { "mon": { "open": "09:00", "close": "21:00" }, "tue": { "open": "09:00", "close": "21:00" }, "wed": { "open": "09:00", "close": "21:00" }, "thu": { "open": "09:00", "close": "21:00" }, "fri": { "open": "09:00", "close": "21:00" }, "sat": { "open": "10:00", "close": "20:00" }, "sun": null },
+  "social": { "instagram": "https://instagram.com/graphite.detailing" }
+}
