@@ -34,6 +34,8 @@ https://<project>.pages.dev/s/oxide
 https://<project>.pages.dev/s/graphite/owner
 ```
 
+The published static build includes HTML shells for `/s/<slug>/`, `/s/<slug>/book` and `/s/<slug>/owner`. Rebuild and deploy after adding a tenant so its owner and booking deep links are also generated.
+
 Both bundled demos stay in `preview` mode, use clearly local demo data and do not send real notifications.
 
 ## Branded demo domain

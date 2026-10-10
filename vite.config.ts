@@ -13,8 +13,11 @@ function tenantHtmlShells() {
       const config = JSON.parse(await readFile(path.resolve(publicRoot, entry.name, 'business.json'), 'utf8')) as { slug: string; name: string; description: string; accent: string; icon?: string; appleTouchIcon?: string };
       const icon = config.icon ?? '/icons/icon.svg'; const apple = config.appleTouchIcon ?? '/icons/apple-touch-icon.svg';
       const html = source.replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(config.name)} · Онлайн-запись</title>`).replace(/<meta name="theme-color" content="[^"]*" \/>/, `<meta name="theme-color" content="${config.accent}" />`).replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${escapeHtml(config.description)}" />`).replace(/href="\/icons\/icon\.svg"/, `href="${icon}"`).replace(/href="\/icons\/apple-touch-icon\.svg"/, `href="${apple}"`).replace('</head>', `    <link rel="manifest" href="/manifests/${config.slug}.webmanifest" />\n  </head>`);
-      await mkdir(path.resolve(distRoot, 's', config.slug), { recursive: true });
-      await writeFile(path.resolve(distRoot, 's', config.slug, 'index.html'), html);
+      for (const route of ['', 'book', 'owner']) {
+        const output = path.resolve(distRoot, 's', config.slug, route);
+        await mkdir(output, { recursive: true });
+        await writeFile(path.resolve(output, 'index.html'), html);
+      }
     }
   } };
 }

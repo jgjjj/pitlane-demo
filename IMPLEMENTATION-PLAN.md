@@ -42,7 +42,7 @@ Owner-only AI uses server-side LLM settings and a bounded tool loop. Schedule qu
 
 Per-tenant manifest metadata, icon references, deep-link shell and named tenant cache. VAPID push is opt-in and truthful; Cron leases outbox jobs with dedupe. ICS is an additional downloadable channel.
 
-**Check:** manifest/deep-link validation, service-worker cache scope, push with VAPID, lease recovery, dedupe and ICS output.
+**Check:** manifest/deep-link validation for `/s/<slug>/`, `/book` and `/owner`, service-worker cache scope, push with VAPID, lease recovery, dedupe and ICS output.
 
 ## Stage 8 — release
 
