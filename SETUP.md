@@ -42,7 +42,7 @@ npm run tenant:verify -- graphite
 npm run build
 ```
 
-`tenant:publish` генерирует `public/manifests/<slug>.webmanifest`; приложение также выбирает manifest и метаданные по текущему slug. `_redirects` обеспечивает deep-link оболочку на Cloudflare Pages. Для разных scope в service worker используйте отдельный deployment/worker scope; один общий build не смешивает данные благодаря `tenant_id` в серверной схеме.
+`tenant:publish` генерирует `public/manifests/<slug>.webmanifest`; приложение также выбирает manifest и метаданные по текущему slug. Vite build генерирует статические HTML-shell файлы в `dist/s/<slug>/index.html`, поэтому Cloudflare Pages не требует wildcard `_redirects` и не попадает в redirect loop. Для разных scope в service worker используйте отдельный deployment/worker scope; один общий build не смешивает данные благодаря `tenant_id` в серверной схеме.
 
 Buyer/demo distribution is documented in [SHARE-WITH-BUYERS.md](./SHARE-WITH-BUYERS.md).
 

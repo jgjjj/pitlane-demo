@@ -2,7 +2,7 @@
 
 ## Реализовано в репозитории
 
-- React 19 + TypeScript strict + Vite, общий tenant-aware build и Cloudflare Pages fallback.
+- React 19 + TypeScript strict + Vite, общий tenant-aware build и статические Cloudflare Pages shells в `dist/s/<slug>/index.html`.
 - Мобильный тёмный интерфейс, CSS custom property акцента из конфигурации, safe-area bottom navigation, `prefers-reduced-motion`, loading/error/empty/success состояния ключевых экранов.
 - Клиентский preview flow: услуга, дата, время, контакты, подтверждение, access URL, кабинет с изоляцией localStorage по slug.
 - Live flow вызывает `create-booking` Edge Function; цена, tenant, длительность, ресурс и доступ контролируются SQL.
